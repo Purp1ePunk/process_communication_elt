@@ -16,7 +16,7 @@ int main(int argc, char* argv[]) { //В качестве аргумента пе
   for (int i = 0; i < len-1; i++) {str[i] = argv[1][i];}
   printf("LEN: %d", len-1);
 
-  char memory_path[] = "first.c"; //Используется для создания ключа. Одинаковый во втором файле.
+  char memory_path[] = "6-7_first.c"; //Используется для создания ключа. Одинаковый во втором файле.
   key_t key = ftok(memory_path, 0); //IPC-ключ
 
   if (key < 0) {
